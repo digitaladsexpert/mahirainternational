@@ -1,106 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="hi">
 <head>
-  <!-- Basic -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stock Market Basics – Join Free</title>
-  <meta name="description" content="100% free stock market education. Learn chart reading, technical analysis, and risk management. No buy/sell tips. For learning purpose only.">
-  <link rel="canonical" href="https://example.com/">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mentor Mahira</title>
 
-  <!-- Performance -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:#f0f4f3;
+  color:#0b1220;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+}
 
-  <!-- Favicons (optional) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+.wrap{
+  width:100%;
+  max-width:1080px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  text-align:center;
+  padding:20px;
+}
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Stock Market Basics – Join Free">
-  <meta property="og:description" content="Learn charts & risk management. No buy/sell tips. 100% educational.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop">
+.top-banner{
+  background:#19a3f7;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:8px;
+  font-weight:600;
+  margin-bottom:16px;
+}
 
-  <!-- Minimal CSS (inline for speed) -->
-  <style>
-    :root{
-      --bg1:#0c0c1d;
-      --bg2:#1a1a2b;
-      --brand: #ff6699;
-      --brand-2:#00f0ff;
-      --text:#ffffff;
-      --muted:#b5b5c3;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        linear-gradient(135deg, rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop') no-repeat center/cover fixed;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      min-height:100vh;
-    }
-    .container{
-      max-width:520px; margin:0 auto; padding:24px 18px; text-align:center; min-height:100vh; display:flex; flex-direction:column; justify-content:center;
-      backdrop-filter: saturate(130%);
-    }
-    .badge{display:inline-block; font-size:.78rem; padding:6px 10px; border:1px solid #2a2a3a; border-radius:999px; color:#d6eaff; background:rgba(0,240,255,.08); margin-bottom:14px}
-    h1{font-size:1.9rem; line-height:1.2; margin:6px 0 10px; background:linear-gradient(90deg,var(--brand-2),var(--brand)); -webkit-background-clip:text; background-clip:text; color:transparent;}
-    .sub{font-size:1rem; color:var(--muted); margin:0 auto 16px; max-width:36ch}
-    .pill{
-      display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:rgba(0,255,153,.07); border:1px dashed rgba(0,255,153,.35); color:#d8ffe9; font-size:.9rem; margin:6px 0 18px;
-    }
-    ul.bullets{list-style:none; padding:0; margin:0 0 18px}
-    ul.bullets li{margin:8px 0; color:#e9eef9}
-    .cta{
-      display:inline-block; text-decoration:none; background:var(--brand); color:#041b14; padding:14px 18px; font-weight:700; border-radius:12px; box-shadow:0 0 0 0 rgba(0,255,153,.6); transform:translateZ(0);
-      transition:transform .15s ease;
-      animation:pulse 1.6s infinite;
-    }
-    .cta:active{transform:scale(.98)}
-    @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(0,255,153,.55)}
-      70%{box-shadow:0 0 0 20px rgba(0,255,153,0)}
-      100%{box-shadow:0 0 0 0 rgba(0,255,153,0)}
-    }
-    .fineprint{font-size:.86rem; color:var(--muted); margin:18px auto 0; max-width:44ch}
-    .disclaimer{font-size:.78rem; color:#9aa4b2; margin:18px auto 0; max-width:50ch}
-    .safe{display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; color:#a1ffd6; font-size:.9rem}
-    .shield{width:18px; height:18px; display:inline-block; border-radius:4px; background:linear-gradient(135deg,#0df,#0f9)}
-    footer{opacity:.8; margin-top:22px; font-size:.78rem; color:#9aa4b2}
-  </style>
+.logo{
+  width:90px;
+  height:90px;
+  border-radius:16px;
+  background:#e9f6ff;
+  margin:0 auto 14px;
+  overflow:hidden;
+}
+.logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+h1{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:6px;
+}
+.accent{color:#0aa3ff;}
+
+.sub-title{
+  color:#0b6b2e;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.stats{
+  margin-bottom:12px;
+  color:#444;
+  font-weight:600;
+}
+
+.desc{
+  padding:10px;
+  font-size:14px;
+  margin-bottom:16px;
+  color:#333;
+  line-height:1.6;
+}
+
+/* Telegram Button */
+.btn-telegram{
+  background:linear-gradient(180deg,#0b7b2b,#045d1f);
+  color:#fff;
+  padding:14px 32px;
+  border-radius:40px;
+  font-weight:800;
+  font-size:18px;
+  text-decoration:none;
+  display:inline-block;
+  animation:pulseBtn 2s infinite ease-in-out;
+  box-shadow:0 0 20px rgba(11,123,43,0.4);
+  margin-bottom:12px;
+  cursor:pointer;
+}
+
+@keyframes pulseBtn{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.05)}
+  100%{transform:scale(1)}
+}
+
+
+.timer-row{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin-bottom:14px;
+}
+
+.timer-pill{
+  background:#e6f5ff;
+  padding:8px 14px;
+  border-radius:20px;
+  font-weight:700;
+}
+
+.note{
+  font-size:14px;
+  color:#333;
+  margin-bottom:10px;
+}
+
+.footer-links{
+  margin-top:20px;
+  font-size:13px;
+  line-height:1.7;
+}
+.footer-links a{
+  color:#0a84ff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.fb-disclaimer{
+  font-size:12px;
+  color:#777;
+  margin-top:20px;
+  line-height:1.5;
+}
+</style>
+
+ <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '897257776336662');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=897257776336662&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+  
 </head>
+
 <body>
-  <main class="container">
-    <span class="badge">100% Educational • Policy Safe</span>
-    <h1>Stock Market Basics – Join Free</h1>
-    <p class="sub">Learn index behaviour & risk management</p>
 
-    <div class="pill">🚫 No Buy/Sell Tips • ✅ For Learning Purpose Only</div>
+<div class="wrap">
 
-    <ul class="bullets" aria-label="What you'll learn">
-      <li>• Chart basics & risk rules (no return promises)</li>
-      <li>• How to read trends without speculation</li>
-      <li>• Market discipline & common mistakes</li>
-    </ul>
+  <div class="top-banner">Join Our Free Trading Learning Community</div>
 
-    <!-- CTA goes to a page-specific bridge -->
-    <a class="cta" href="bridge-lp33.html" rel="nofollow">Start Learning</a>
+  <div class="logo">
+    <img src="logo.jpeg" alt="Elite GT">
+  </div>
 
-    <div class="safe"><span class="shield" aria-hidden="true"></span> Ad Policy Friendly Content</div>
+  <h1>Learn Smart Trading with <span class="accent">The Trading Mentor Mahira</span></h1>
+  <div class="sub-title">Forex & Crypto Market Learning – Step by Step</div>
+  <div class="stats">Trusted by 18,500+ Learners</div>
 
-    <p class="fineprint">We focus on concepts & frameworks suitable for beginners.</p>
-    <p class="disclaimer"><em>This website is for educational purposes only. We do not provide investment, trading, or financial advice.</em></p>
+  <div class="desc">
+    Join our educational community to understand Forex & Crypto markets.
+    Learn technical concepts, market psychology and risk management in a simple way.
+    <br><br>
+    <small>Educational purpose only • No guaranteed returns • Market risk involved</small>
+  </div>
 
-    <footer>© <span id="y"></span> Market Basics Learning Hub</footer>
-  </main>
+  <!-- Telegram CTA -->
+  <a class="btn-telegram" href="https://t.me/+nHzb5l_0YJhlMmQ1" onclick="trackTelegram()">
+    View Community on Telegram
+  </a>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <!-- Timer -->
+  <div class="timer-row">
+    <div class="timer-pill" id="minutes">10 Min</div>
+    <div class="timer-pill" id="seconds">00 Sec</div>
+  </div>
+
+  <div class="note">
+    Telegram users can join instantly with one click
+  </div>
+
+  <div class="footer-links">
+    <a href="/privacy.html" target="_blank">Privacy Policy</a> •
+    <a href="/disclaimer.html" target="_blank">Disclaimer</a> •
+    <a href="/terms.html" target="_blank">Terms & Conditions</a>
+    <br><br>
+    Ads Managed By
+    <a href="https://t.me/+ifc6dyg-xiA2ZGE1" target="_blank">Digital Ads Expert</a>
+  </div>
+
+  <div class="fb-disclaimer">
+    This website is independent and not associated with Facebook™ or Meta Platforms Inc.
+  </div>
+
+</div>
+
+<!-- TIMER SCRIPT -->
+<script>
+let remaining = 10 * 60;
+const m = document.getElementById("minutes");
+const s = document.getElementById("seconds");
+
+function updateTimer(){
+  if(remaining <= 0) return;
+  const min = Math.floor(remaining / 60);
+  const sec = remaining % 60;
+  m.textContent = (min < 10 ? "0"+min : min) + " Min";
+  s.textContent = (sec < 10 ? "0"+sec : sec) + " Sec";
+  remaining--;
+}
+updateTimer();
+setInterval(updateTimer, 1000);
+</script>
+
+<!-- TELEGRAM TRACKING -->
+<script>
+function trackTelegram(){
+  if(typeof fbq === "function"){
+    fbq('trackCustom','TelegramJoinIntent');
+  }
+}
+</script>
+
+<!-- BROKER TRACKING -->
+<script>
+function trackBroker(){
+  if(typeof fbq === "function"){
+    fbq('trackCustom','BrokerAccountClick');
+  }
+}
+</script>
+
 </body>
 </html>
