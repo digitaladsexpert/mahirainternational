@@ -1,249 +1,193 @@
 <!doctype html>
-<html lang="hi">
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Mentor Mahira</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trading Mentor Experts</title>
 
 <style>
+
 *{box-sizing:border-box;margin:0;padding:0}
+
 body{
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-  background:#f0f4f3;
-  color:#0b1220;
-  padding:20px;
-  display:flex;
-  justify-content:center;
+font-family:system-ui,Arial;
+background:#f0f4f3;
+display:flex;
+justify-content:center;
+padding:20px;
 }
 
 .wrap{
-  width:100%;
-  max-width:1080px;
-  background:#fff;
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  text-align:center;
-  padding:20px;
+max-width:900px;
+width:100%;
+background:#fff;
+border-radius:10px;
+padding:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
 .top-banner{
-  background:#19a3f7;
-  color:#fff;
-  padding:8px 12px;
-  border-radius:8px;
-  font-weight:600;
-  margin-bottom:16px;
+background:#19a3f7;
+color:#fff;
+padding:8px;
+border-radius:8px;
+font-weight:600;
+margin-bottom:15px;
 }
 
 .logo{
-  width:90px;
-  height:90px;
-  border-radius:16px;
-  background:#e9f6ff;
-  margin:0 auto 14px;
-  overflow:hidden;
+width:90px;
+height:90px;
+margin:auto;
+margin-bottom:12px;
 }
+
 .logo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+width:100%;
+height:100%;
+border-radius:16px;
 }
 
-h1{
-  font-size:20px;
-  font-weight:700;
-  margin-bottom:6px;
+.heading{
+font-size:22px;
+font-weight:700;
+margin-bottom:8px;
 }
-.accent{color:#0aa3ff;}
 
-.sub-title{
-  color:#0b6b2e;
-  font-weight:700;
-  margin-bottom:6px;
+.sub{
+color:#0b6b2e;
+font-weight:700;
+margin-bottom:8px;
 }
 
 .stats{
-  margin-bottom:12px;
-  color:#444;
-  font-weight:600;
+margin-bottom:12px;
+font-weight:600;
 }
 
 .desc{
-  padding:10px;
-  font-size:14px;
-  margin-bottom:16px;
-  color:#333;
-  line-height:1.6;
+font-size:14px;
+margin-bottom:15px;
+line-height:1.6;
 }
 
-/* Telegram Button */
-.btn-telegram{
-  background:linear-gradient(180deg,#0b7b2b,#045d1f);
-  color:#fff;
-  padding:14px 32px;
-  border-radius:40px;
-  font-weight:800;
-  font-size:18px;
-  text-decoration:none;
-  display:inline-block;
-  animation:pulseBtn 2s infinite ease-in-out;
-  box-shadow:0 0 20px rgba(11,123,43,0.4);
-  margin-bottom:12px;
-  cursor:pointer;
+.highlight{
+background:#fff3cd;
+padding:12px;
+border-radius:8px;
+margin-bottom:14px;
+font-weight:600;
 }
 
-@keyframes pulseBtn{
-  0%{transform:scale(1)}
-  50%{transform:scale(1.05)}
-  100%{transform:scale(1)}
+.btn{
+background:linear-gradient(#0b7b2b,#045d1f);
+color:#fff;
+padding:14px 30px;
+border-radius:40px;
+text-decoration:none;
+font-size:18px;
+font-weight:800;
+display:inline-block;
+animation:pulse 2s infinite;
+margin-bottom:12px;
 }
 
-
-.timer-row{
-  display:flex;
-  gap:8px;
-  justify-content:center;
-  margin-bottom:14px;
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.05)}
+100%{transform:scale(1)}
 }
 
-.timer-pill{
-  background:#e6f5ff;
-  padding:8px 14px;
-  border-radius:20px;
-  font-weight:700;
+.timer{
+margin-top:10px;
+font-weight:700;
 }
 
-.note{
-  font-size:14px;
-  color:#333;
-  margin-bottom:10px;
-}
-
-.footer-links{
-  margin-top:20px;
-  font-size:13px;
-  line-height:1.7;
-}
-.footer-links a{
-  color:#0a84ff;
-  text-decoration:none;
-  font-weight:600;
-}
-
-.fb-disclaimer{
-  font-size:12px;
-  color:#777;
-  margin-top:20px;
-  line-height:1.5;
-}
 </style>
 
- <!-- Meta Pixel Code -->
+<!-- Facebook Pixel -->
+
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '3378861925615809');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3378861925615809&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-  
+fbq('init','3378861925615809');
+fbq('track','PageView');
+</script>
+
 </head>
 
 <body>
 
 <div class="wrap">
 
-  <div class="top-banner">Join Our Free Trading Learning Community</div>
+<div class="top-banner">
+Join Our Free Telegram Trading Community
+</div>
 
-  <div class="logo">
-    <img src="logo.jpeg" alt="Elite GT">
-  </div>
+<div class="logo">
+<img src="logo.jpeg">
+</div>
 
-  <h1>Learn Smart Trading with <span class="accent">The Trading Mentor Mahira</span></h1>
-  <div class="sub-title">Forex & Crypto Market Learning – Step by Step</div>
-  <div class="stats">Trusted by 18,500+ Learners</div>
+<div class="heading">
+Learn Smart Trading With Expert Mentors
+</div>
 
-  <div class="desc">
-    Join our educational community to understand Forex & Crypto markets.
-    Learn technical concepts, market psychology and risk management in a simple way.
-    <br><br>
-    <small>Educational purpose only • No guaranteed returns • Market risk involved</small>
-  </div>
+<div class="sub">
+Free Crypto & Forex Signals + YouTube Live Trading Classes
+</div>
 
-  <!-- Telegram CTA -->
-  <a class="btn-telegram" href="https://t.me/+nHzb5l_0YJhlMmQ1" onclick="trackTelegram()">
-    View Community on Telegram
-  </a>
+<div class="stats">
+12,480+ Active Members
+</div>
 
-  <!-- Timer -->
-  <div class="timer-row">
-    <div class="timer-pill" id="minutes">10 Min</div>
-    <div class="timer-pill" id="seconds">00 Sec</div>
-  </div>
+<div class="highlight">
+🎥 Learn Trading Through <b>YouTube Live Streaming Sessions</b>
+</div>
 
-  <div class="note">
-    Telegram users can join instantly with one click
-  </div>
+<div class="desc">
 
-  <div class="footer-links">
-    <a href="/privacy.html" target="_blank">Privacy Policy</a> •
-    <a href="/disclaimer.html" target="_blank">Disclaimer</a> •
-    <a href="/terms.html" target="_blank">Terms & Conditions</a>
-    <br><br>
-    Ads Managed By
-    <a href="https://t.me/+ifc6dyg-xiA2ZGE1" target="_blank">Digital Ads Expert</a>
-  </div>
+Get Daily Crypto & Forex Signals, Market Analysis and Trading Strategies from Professional Mentors.
 
-  <div class="fb-disclaimer">
-    This website is independent and not associated with Facebook™ or Meta Platforms Inc.
-  </div>
+<br><br>
+
+🎥 Join our community and watch **Live Trading Sessions on YouTube** where our mentors explain real market trades step-by-step.
+
+<br><br>
+
+You will receive signals, updates and live class notifications inside our Telegram community.
+
+<br><small>Educational Purpose Only • Trading involves risk</small>
 
 </div>
 
-<!-- TIMER SCRIPT -->
-<script>
-let remaining = 10 * 60;
-const m = document.getElementById("minutes");
-const s = document.getElementById("seconds");
+<a class="btn"
+href="https://t.me/+Abf_djOXxzphZWU1"
+target="_blank">
+Join Free Telegram Channel
+</a>
 
-function updateTimer(){
-  if(remaining <= 0) return;
-  const min = Math.floor(remaining / 60);
-  const sec = remaining % 60;
-  m.textContent = (min < 10 ? "0"+min : min) + " Min";
-  s.textContent = (sec < 10 ? "0"+sec : sec) + " Sec";
-  remaining--;
-}
-updateTimer();
-setInterval(updateTimer, 1000);
-</script>
+<div class="timer">
+Limited Time Access – Join Now
+</div>
 
-<!-- TELEGRAM TRACKING -->
-<script>
-function trackTelegram(){
-  if(typeof fbq === "function"){
-    fbq('trackCustom','TelegramJoinIntent');
-  }
-}
-</script>
+</div>
 
-<!-- BROKER TRACKING -->
 <script>
-function trackBroker(){
-  if(typeof fbq === "function"){
-    fbq('trackCustom','BrokerAccountClick');
-  }
+
+document.querySelector(".btn").onclick=function(){
+fbq('track','Lead');
 }
+
 </script>
 
 </body>
